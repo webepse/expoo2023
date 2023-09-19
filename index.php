@@ -14,9 +14,18 @@
         $merlin = new Personnage("Merlin");
         $harry = new Personnage("Harry");
 
-        echo $merlin->crier();
-        echo $merlin->crier("test");
-        $harry->mort();
+        var_dump($harry);
+
+        echo "<h1>après attaque</h1>";
+        $merlin->setAtk(100);
+        $merlin->attaque($harry);
+
+        var_dump($harry);
+
+        echo "<h1>Regen</h1>";
+        $harry->regenerer(120);
+
+        var_dump($harry);
 
     ?>
 </body>
