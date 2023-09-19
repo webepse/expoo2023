@@ -1,6 +1,6 @@
 <?php 
-    require "class/Personnage.php";
-    require "class/Text.php";
+   require "class/Autoloader.php";
+   Autoloader::register();
 
 ?>
 <!DOCTYPE html>
