@@ -1,5 +1,6 @@
 <?php 
-    require "Personnage.php";
+    require "class/Personnage.php";
+    require "class/Text.php";
 
 ?>
 <!DOCTYPE html>
@@ -26,6 +27,12 @@
         $harry->regenerer(120);
 
         var_dump($harry);
+
+        // $test = new Text();
+
+        // echo $test->withZero(5);
+
+        echo Text::withZero(5);
 
     ?>
 </body>
