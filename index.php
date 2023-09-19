@@ -14,6 +14,8 @@
     <?php 
         $merlin = new Personnage("Merlin");
         $harry = new Personnage("Harry");
+        $legolas = new Archer("Legolas");
+        var_dump($legolas);
 
         var_dump($harry);
 
@@ -33,6 +35,11 @@
         // echo $test->withZero(5);
 
         echo Text::withZero(5);
+
+        echo $legolas->crier("Ici Legolas");
+
+        echo $legolas->getTest();
+        echo $harry->test;
 
     ?>
 </body>

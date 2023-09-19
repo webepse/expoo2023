@@ -6,6 +6,7 @@ class Personnage{
     public $vie = 80;
     public $atk = 30;
     public $name;
+    protected $test = "test";
 
     public function __construct($nom)
     {
